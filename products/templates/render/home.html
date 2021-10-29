@@ -1,0 +1,19 @@
+{% extends 'render/base.html'%}
+{% load static %}
+
+{% block content %}
+
+
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Buy smart in BuymarT</h1>
+            <a  class="btn btn-warning btn-lg  homebtn" href="{% url 'products' %}">Shop now &#8594;</a>
+        </div>
+
+        <div class="hero-img">
+            <img  class="resimg" src="{% static 'images/online-shopping.png'%}" alt="">
+
+        </div>
+
+    </div>
+{% endblock  %}
