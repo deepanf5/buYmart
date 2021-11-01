@@ -1,1 +1,1 @@
-web:gunicorn buymart.wsgi
+web: gunicorn buymart.wsgi
