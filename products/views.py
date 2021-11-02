@@ -93,7 +93,7 @@ def updateItem(request):
     return JsonResponse('item was added', safe=False)
 
 
-def view(request,):
+def view(request):
     if request.user.is_authenticated:
         customer = request.user.customer
         order, created = Order.objects.get_or_create(customer=customer, complete=False)
